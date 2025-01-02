@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+ES+Deco+Guides&family=Poppins:wght@400;600&family=Roboto&display=swap");
+
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+nav {
+  background: rgb(218, 146, 146);
+  padding: 2%;
+  min-height: 10vh;
+}
+
+.nav-center {
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h4 {
+  color: green;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style: none;
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25em;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  color: blue;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+
+li:hover {
+  color: rgb(13, 13, 174);
+  transform: translate(0, -10px);
+}
+
+main {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #21f1f7;
+}
+
+.btn {
+  padding: 1%;
+  border-radius: 10px;
+  border: 2px solid #1a8488;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  font-size: 1.25em;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn:hover {
+  background: #533111;
+  color: white;
+}
+
+.color-type {
+  padding: 2%;
+  font-size: 1.5em;
+  font-weight: 600;
+  opacity: 0.8;
+  color: #2c2c26;
+}
+
+.color-name {
+  color: #743206;
+}
