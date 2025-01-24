@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: 100vh;
+  font-family: "Poppins", serif;
+}
+
+.container,
+.single-review,
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin: 5%;
+}
+
+.title h1 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.underline {
+  border-bottom: 5px solid rgb(6, 79, 190);
+  margin-top: 10%;
+}
+
+.single-review {
+  width: 45%;
+  margin-bottom: 3%;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1% 2%;
+  align-items: space-around;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 5%;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border-right: 10px solid rgb(6, 79, 190);
+  width: 150px;
+  height: 150px;
+}
+
+/* .profile-pic::before {
+  content: open-quote;
+  font-weight: bold;
+  font-size: 50px;
+  color: rgb(6, 79, 190);
+} */
+
+.author {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-size: 1.25rem;
+}
+
+.job {
+  text-transform: uppercase;
+  color: rgb(6, 79, 190);
+  margin-bottom: 5%;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.review-text {
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+.btn-container {
+  margin-bottom: 2%;
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev-btn,
+.next-btn {
+  color: rgb(6, 79, 190);
+  background: transparent;
+  font-size: 2rem;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: rgb(6, 54, 125);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+button:hover {
+  transform: translate(0px, -5px);
+}
+
+.random-btn {
+  background: rgb(6, 79, 190);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.random-btn:hover {
+  background: rgb(3, 60, 145);
+}
