@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 100vh;
+  background-color: #cccccc;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4032ada5-0df4-44b0-a784-0894dabce3b3/dbl19es-2c1e8a65-7004-4999-a065-9e6ebc144676.jpg/v1/fill/w_1024,h_640,q_75,strp/the_kustom_shop___beautiful_nature_background_by_thekustomshop_dbl19es-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQwIiwicGF0aCI6IlwvZlwvNDAzMmFkYTUtMGRmNC00NGIwLWE3ODQtMDg5NGRhYmNlM2IzXC9kYmwxOWVzLTJjMWU4YTY1LTcwMDQtNDk5OS1hMDY1LTllNmViYzE0NDY3Ni5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.roLuMMXdKjW0yUc9eC0PNHkiGNKSGBT10m8dQql_8Aw);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.banner {
+  background-color: #fff;
+  height: 25%;
+  width: 40%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+}
+
+.btn {
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.25rem;
+  background-color: #12b36a;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #08693a;
+}
+
+.modal-btn {
+  margin-top: 10%;
+  letter-spacing: 0.5rem;
+}
+
+.show-modal {
+  /* z-index: 100; */
+}
+
+.modal-overlay {
+  background-color: rgba(128, 128, 128, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.show-modal {
+  visibility: visible;
+  z-index: 100;
+}
+
+.modal-container {
+  background-color: rgba(256, 256, 256);
+  width: 60vw;
+  height: 30vh;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 3%;
+  right: 2%;
+}

@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+.hamburger-menu-container {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.5s linear;
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.hamburger-menu-container:hover {
+  color: grey;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.sidebar {
+  background-color: rgb(87, 87, 216);
+  color: white;
+  width: 25%;
+  height: 100vh;
+  padding: 2em;
+}
+
+.logo-container {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li,
+a {
+  cursor: pointer;
+}
+
+li:hover {
+  color: rgb(191, 183, 183);
+}
+
+.nav-links-container ul {
+  color: white;
+}
+
+.nav-links-container li {
+  padding-bottom: 2em;
+  font-size: 1.15rem;
+}
+
+.social-links-container > ul {
+  display: flex;
+}
+
+.social-links-container li {
+  padding-right: 2.5em;
+}
+
+.nav-links-container li a:hover {
+  color: rgb(157, 153, 153);
+}
+.social-links-container {
+  position: absolute;
+  bottom: 2em;
+  font-size: 1.5rem;
+}
+
+.close-btn > .fa-x {
+  font-size: 1.15rem;
+  cursor: pointer;
+}
