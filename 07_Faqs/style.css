@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  font-family: "Dancing Script", serif;
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 1.5rem;
+  color: rgb(129, 111, 5);
+}
+.questions {
+  width: 60%;
+}
+
+.question {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 5%;
+  padding: 2%;
+  font-family: "Roboto", serif;
+}
+
+.question-title {
+  font-family: "Poppins", serif;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plus-icon {
+  display: none;
+}
+
+.minus-icon {
+  display: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+.show-icon {
+  display: block;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 1px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.question-text {
+  display: none;
+}
+
+.question.show-text .question-text {
+  display: block;
+  border-top: 2px solid rgb(129, 111, 5, 0.5);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  font-family: "Roboto", serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+}
