@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Project</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav class="nav-container">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img class="logo" src="./assets/logo.png" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <!-- nav links -->
+          <div class="nav-links">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="#services" class="scroll-link">services</a>
+              </li>
+              <li>
+                <a href="#tours" class="scroll-link">tour</a>
+              </li>
+              <li>
+                <a href="#tours" class="scroll-link">tour</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>Lorem ipsum</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+            aspernatur nisi accusamus at, natus quos sit, et illum non suscipit
+            ipsum ad impedit voluptatem atque pariatur in iste consectetur
+            accusantium.
+          </p>
+          <a href="#tours" class="scroll-link btn btn-white">Explore tours</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>about <span>us</span></h2>
+      </div>
+    </section>
+    <!-- services -->
+    <section id="services" class="section">
+      <div class="title">
+        <h2>Our <span>services</span></h2>
+      </div>
+    </section>
+    <!-- contact -->
+    <section id="tours" class="section">
+      <div class="title">
+        <h2>featured <span>tours</span></h2>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        copyright &copy; travel and tours company <span id="date"></span>. all
+        rights reserved
+      </p>
+    </footer>
+    <a class="scroll-link top-link fixed-arrow" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script defer src="script.js"></script>
+  </body>
+</html>

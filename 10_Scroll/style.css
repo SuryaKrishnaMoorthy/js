@@ -1,0 +1,322 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue";
+  background: rgb(221, 220, 220);
+  color: rgb(101, 101, 101);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img:not(.logo) {
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: grey;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/* global classes */
+
+.btn {
+  border: 2px solid black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  letter-spacing: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  color: black;
+  text-transform: uppercase;
+  background: transparent;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: #fff;
+  background: black;
+}
+
+nav {
+  background: #fff;
+  padding: 1rem 1.5rem;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-toggle {
+  font-size: 1.5rem;
+  color: rgb(16, 42, 66);
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.nav-toggle:hover {
+  color: rgb(64, 207, 212);
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+}
+
+.fixed-arrow {
+  display: none;
+}
+
+.top-link {
+  background: rgb(64, 207, 212);
+  color: white;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.top-link:hover {
+  background: rgb(32, 118, 121);
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+.show-links {
+  height: 200px;
+}
+
+.links a {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  display: block;
+  font-weight: bold;
+  padding: 0.75rem 0;
+  background: #fff;
+  color: rgb(97, 125, 152);
+  letter-spacing: 0.25rem;
+  transition: all 0.3s ease-in;
+}
+
+.links a:hover {
+  color: rgb(16, 42, 66);
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    background: transparent;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1170px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  .nav-links {
+    height: auto !important;
+  }
+
+  .links {
+    display: flex;
+  }
+
+  .links a {
+    background: transparent;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    display: block;
+    font-weight: bold;
+    padding: 0;
+    color: rgb(97, 125, 152);
+    letter-spacing: 0.25rem;
+    transition: all 0.3s ease-in;
+  }
+
+  .links a:hover {
+    color: white;
+  }
+}
+
+/* hero */
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(9, 7, 7, 0.8), rgba(255, 255, 255, 0.2)),
+    url("./assets/background-img.jpeg") center/cover no-repeat;
+}
+
+.banner {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.container h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.container p {
+  color: white;
+  max-width: 25rem;
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+
+.btn-white {
+  color: white;
+  border-color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+}
+
+.btn-white:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .container p {
+    max-width: 40rem;
+  }
+}
+/* sections and title */
+.section {
+  padding-bottom: 5rem;
+}
+
+.title h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.title span {
+  color: rgb(64, 207, 212);
+}
+
+#about,
+#services,
+#tours {
+  height: 100vh;
+}
+
+#services {
+  background: white;
+}
+
+footer {
+  background: rgb(44, 40, 40);
+  padding: 5rem 1rem;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  margin-bottom: 0;
+}
