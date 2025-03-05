@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="section-center">
+      <h1>About</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor, illo
+        architecto tenetur libero, natus delectus quisquam veniam voluptatibus
+      </p>
+      <div class="about-container">
+        <article class="about-img">
+          <img src="./assets/about-img.jpg" alt="about image" />
+        </article>
+        <article class="about-content">
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="history">history</button>
+            <button class="tab-btn" data-id="tours">tours</button>
+            <button class="tab-btn" data-id="stay">stay</button>
+          </div>
+          <div class="about-single-content">
+            <div class="single-content active" id="history">
+              <h4>history</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate repellendus id dolore voluptate et sunt doloribus!
+                Corrupti, omnis vitae deleniti eveniet et voluptatibus
+                voluptate, alias ullam voluptatum magnam fuga quia.
+              </p>
+            </div>
+            <div class="single-content" id="tours">
+              <h4>tours</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate repellendus id dolore voluptate et sunt doloribus!
+                Corrupti, omnis vitae deleniti eveniet et voluptatibus
+                voluptate, alias ullam voluptatum magnam fuga quia.
+              </p>
+            </div>
+            <div class="single-content" id="stay">
+              <h4>stay</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate repellendus id dolore voluptate et sunt doloribus!
+                Corrupti, omnis vitae deleniti eveniet et voluptatibus
+                voluptate, alias ullam voluptatum magnam fuga quia.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
