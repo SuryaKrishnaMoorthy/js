@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: "Roboto", "Helvetica Neue";
+}
+.section-center {
+  margin: 3rem;
+  margin-top: 15%;
+}
+
+.giveaway-img > img {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  color: rgb(3, 121, 139);
+  margin-bottom: 1em;
+}
+
+.deadline {
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  margin-bottom: 1em;
+  font-size: 1.25rem;
+}
+.deadline > span {
+  text-transform: lowercase;
+}
+
+.deadline-descr {
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  margin: 3em 0;
+  font-size: 1.1rem;
+}
+
+.countdown {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.countdown-item {
+  padding: 1rem;
+  background: rgb(33, 32, 32);
+  color: white;
+  margin-right: 1rem;
+  width: 6em;
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-digit {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+
+.item-unit {
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  padding: 0.5em 0;
+  font-weight: 100;
+}
